@@ -1,4 +1,4 @@
 [core]
     remote = dvc-remote
 ['remote "dvc-remote"']
-    url = /data/images
+    url = tmp/data/images
