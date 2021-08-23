@@ -1,4 +1,4 @@
 [core]
     remote = dvc-remote
 ['remote "dvc-remote"']
-    url = tmp/data/images
+    url = C:/Users/sbranets/dvc-remote
