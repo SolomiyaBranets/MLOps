@@ -1,0 +1,16 @@
+version: "3"
+services:
+  fastai: 
+    restart: unless-stopped
+    working_dir: /data_wd
+    image: docker-ml-model
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/data_wd/
+    ports:
+      - 5000:5000
