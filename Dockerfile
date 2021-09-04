@@ -8,8 +8,11 @@ RUN apt-get update -y \
 
 RUN pip install fastai==1.0.61
 RUN python -m pip install flask
+RUN pip install mlflow
+RUN pip install tensorboard
+RUN pip install tensorboardx
 
-WORKDIR /data
+WORKDIR /data_wd
 
 ENTRYPOINT [ "python" ]
 CMD [ "app.py" ]
